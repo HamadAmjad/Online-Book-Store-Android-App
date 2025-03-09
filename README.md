@@ -29,6 +29,17 @@ hamadamjad024@gmail.com
   **Contact: hamadamjad024@gmail.com**
 
 ## App ScreenShots
+![Seller DashBoard](https://github.com/user-attachments/assets/f783b7e8-04e8-4e5a-a5c7-cb85e3864e00)
+![Manage Books Page](https://github.com/user-attachments/assets/c2e06c28-b426-4125-843f-a65ef9b65303)
+![Seller's Manage Orders Page](https://github.com/user-attachments/assets/a852977f-6f83-47d5-b761-13e2399ce4c6)
+![Product Details Page](https://github.com/user-attachments/assets/415b6a24-25de-40e0-bacf-fed5a07d5f75)
+![Log In Page](https://github.com/user-attachments/assets/e5a2c22c-6fb3-4058-b90c-ce4d3a951f55)
+![Sign Up Page](https://github.com/user-attachments/assets/9dcfab2e-2136-4bb4-992c-0eb6973d3ce5)
+![Favourites Page](https://github.com/user-attachments/assets/5dbd8974-7c25-4e3d-ac58-60bab08cf338)
+![Online Payment Page](https://github.com/user-attachments/assets/aeac100f-5b85-48e1-b8ec-4becf9f9ea8e)
+![Buyer's Order Page](https://github.com/user-attachments/assets/fe391b78-4ea3-463d-910f-d01c804a6c60)
+![Cart Page](https://github.com/user-attachments/assets/b1deef49-0254-4d4b-879a-df2e189ffbcb)
+![About Us Page](https://github.com/user-attachments/assets/8ce9c3be-f9f1-4d27-ba18-22b95634ddae)
 
 <img src="https://github.com/user-attachments/assets/fc1246f6-920a-4b79-9897-3203f2a185de" alt="Mobile HomePage" style="width: 30%; height: 500px; display: inline-block; margin-right: 1%;"/> 
 <img src="https://github.com/user-attachments/assets/f884e09a-6867-40cc-ae12-2ff2b212c91e" alt="SignUp" style="width: 30%; height: 500px; display: inline-block; margin-right: 1%;"/> 
