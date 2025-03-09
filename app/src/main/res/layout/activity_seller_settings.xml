@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".activities.SellerSettingsActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/manage_wave"/>
+
+    <ImageView
+        android:id="@+id/_manageCategoryIcon"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/_settings_24"
+        android:layout_marginHorizontal="120dp"
+        android:layout_marginTop="60dp"/>
+
+
+    <TextView
+        android:id="@+id/txtSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/_manageCategoryIcon"
+        android:textColor="@color/white"
+        android:text="@string/settings"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/txtSettings"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/_sellerChangePassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginEnd="25dp"
+                    android:textColor="@color/white"
+                    android:drawablePadding="25dp"
+                    android:gravity="center|start"
+                    android:padding="10dp"
+                    android:text="Change Password"
+                    app:drawableStartCompat="@drawable/_lock_24" />
+
+                <View
+                    android:id="@+id/line_12_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:id="@+id/_sellerContactUs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/white"
+                    android:layout_marginEnd="25dp"
+                    android:drawablePadding="25dp"
+                    android:gravity="center|start"
+                    android:padding="10dp"
+                    android:text="Contact us"
+                    app:drawableStartCompat="@drawable/_phone_24" />
+
+                <View
+                    android:id="@+id/line_9_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:id="@+id/_sellerLogout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="25dp"
+                    android:drawablePadding="25dp"
+                    android:layout_gravity="bottom"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:text="Logout"
+                    app:drawableStartCompat="@drawable/_logout_24" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

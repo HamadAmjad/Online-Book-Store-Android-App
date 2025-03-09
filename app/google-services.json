@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "652107244897",
+    "project_id": "bookworm-3ce09",
+    "storage_bucket": "bookworm-3ce09.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:652107244897:android:3e61ed41d3b3c00763d120",
+        "android_client_info": {
+          "package_name": "com.fyp.bookworm"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuerQTIMUN2LikjHGjeN1pZmkugn7ddhs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

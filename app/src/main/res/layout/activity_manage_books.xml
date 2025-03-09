@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".activities.ManageBooksActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/manage_wave"/>
+
+    <ImageView
+        android:id="@+id/_manageBookIcon"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/manage_books"
+        android:layout_marginHorizontal="120dp"
+        android:layout_marginTop="60dp"
+        tools:ignore="ContentDescription" />
+
+
+    <TextView
+        android:id="@+id/_manageBookText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/_manageBookIcon"
+        android:textColor="@color/white"
+        android:text="@string/manage_books"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/_manageBooksRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/_manageBookText"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/_addNewBooksFloatingBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:tint="@color/blue"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/_add_24"
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>

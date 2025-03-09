@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".activities.RegisterActivity">
+
+    <ImageView
+        android:id="@+id/_header"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginStart="220dp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/header_design"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginStart="240dp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/header_blue"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/_registerText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="80dp"
+        android:text="@string/register"
+        android:textStyle="bold"
+        android:layout_marginStart="30dp"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/_header"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="20dp"
+        app:endIconMode="clear_text"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        app:endIconTint="@color/white"
+        android:layout_marginHorizontal="30dp">
+
+        <EditText
+            android:id="@+id/_registerEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:textSize="20sp"
+            android:inputType="textEmailAddress"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:drawableStart="@drawable/_email_24"
+            android:drawableTint="@color/white"
+            android:drawablePadding="10dp"
+            tools:ignore="Autofill" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="20dp"
+        app:endIconMode="clear_text"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        app:endIconTint="@color/white"
+        android:layout_marginHorizontal="30dp">
+
+        <EditText
+            android:id="@+id/_registerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            android:textSize="20sp"
+            android:inputType="text"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:drawableStart="@drawable/_person_24"
+            android:drawableTint="@color/white"
+            android:drawablePadding="10dp"
+            tools:ignore="Autofill" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="20dp"
+        app:endIconMode="clear_text"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        app:endIconTint="@color/white"
+        android:layout_marginHorizontal="30dp">
+
+        <EditText
+            android:id="@+id/_registerPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/phone"
+            android:textSize="20sp"
+            android:inputType="phone"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:drawableStart="@drawable/_phone_24"
+            android:drawableTint="@color/white"
+            android:drawablePadding="10dp"
+            tools:ignore="Autofill" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="20dp"
+        app:endIconMode="clear_text"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        app:endIconTint="@color/white"
+        android:layout_marginHorizontal="30dp">
+
+        <EditText
+            android:id="@+id/_registerAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:textSize="20sp"
+            android:inputType="textPostalAddress"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:drawableStart="@drawable/_location_on_24"
+            android:drawableTint="@color/white"
+            android:drawablePadding="10dp"
+            tools:ignore="Autofill,HardcodedText" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/white"
+        android:layout_marginHorizontal="30dp"
+        app:passwordToggleEnabled="true"
+        android:layout_below="@id/address"
+        app:passwordToggleTint="@color/white">
+
+        <EditText
+            android:id="@+id/_registerPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/white"
+            android:textSize="20sp"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/_lock_24"
+            android:drawableTint="@color/white"
+            android:drawablePadding="10dp"
+            tools:ignore="Autofill" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/_registerLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_below="@id/password"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/_radioGroup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:weightSum="2"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/_radioSellerBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/seller"
+                android:textSize="18sp"
+                android:buttonTint="@color/white"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/_radioBuyerBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/buyer"
+                android:textColor="@color/white"
+                android:buttonTint="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/_register_createBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="@string/create"
+            android:textColor="@color/blue"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:background="@drawable/button_background"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="16dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/_loginText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textAllCaps="true"
+        android:layout_below="@id/_registerLinear"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:gravity="center_horizontal|bottom" />
+
+</RelativeLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/blue"
+    tools:context=".fragments.SettingsFragment">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/buyer_wave"/>
+
+    <TextView
+        android:id="@+id/txtSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_alignParentStart="true"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/white"
+        android:text="@string/settings" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/txtSettings"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/_settingOrderHistory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="25dp"
+                        android:textColor="@color/white"
+                        android:drawablePadding="25dp"
+                        android:gravity="center|start"
+                        android:padding="10dp"
+                        android:text="Orders"
+                        app:drawableStartCompat="@drawable/_order_24" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="25dp"
+                        android:background="@color/white" />
+
+                    <TextView
+                        android:id="@+id/_settingChangePassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="25dp"
+                        android:textColor="@color/white"
+                        android:drawablePadding="25dp"
+                        android:gravity="center|start"
+                        android:padding="10dp"
+                        android:text="Change Password"
+                        app:drawableStartCompat="@drawable/_lock_24" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="25dp"
+                        android:background="@color/white" />
+
+                    <TextView
+                        android:id="@+id/_settingContactUs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="15dp"
+                        android:textColor="@color/white"
+                        android:layout_marginEnd="25dp"
+                        android:drawablePadding="25dp"
+                        android:gravity="center|start"
+                        android:padding="10dp"
+                        android:text="Contact us"
+                        app:drawableStartCompat="@drawable/_phone_24" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="25dp"
+                        android:background="@color/white" />
+
+                    <TextView
+                        android:id="@+id/_logout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="25dp"
+                        android:drawablePadding="25dp"
+                        android:layout_gravity="bottom"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:text="Logout"
+                        app:drawableStartCompat="@drawable/_logout_24" />
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".activities.AddBookActivity">
+
+    <LinearLayout
+        android:id="@+id/_addBookLinear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingVertical="25dp"
+            android:text="Add Books"
+            android:textColor="@color/blue"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/_addBookLinear2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/_addBookLinear1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/_addBookImage"
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/choose_img"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:scaleType="fitXY"
+                    tools:ignore="ContentDescription" />
+
+                <EditText
+                    android:id="@+id/_addBookName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Book Name"
+                    android:textSize="20sp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edittext_background"
+                    android:padding="12dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/_addBookCity"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="City"
+                        android:textSize="20sp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/edittext_background"
+                        android:padding="12dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="10dp"
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/white"
+                        tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                    <EditText
+                        android:id="@+id/_addBookPrice"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Price"
+                        android:textSize="20sp"
+                        android:inputType="number"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/edittext_background"
+                        android:padding="12dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginStart="10dp"
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/white"
+                        tools:ignore="Autofill,HardcodedText" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/_addBookQuantity"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".7"
+                        android:hint="Quantity"
+                        android:textSize="20sp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/edittext_background"
+                        android:padding="12dp"
+                        android:inputType="number"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="10dp"
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/white"
+                        tools:ignore="Autofill,HardcodedText" />
+
+                    <EditText
+                        android:id="@+id/_addBookContact"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3"
+                        android:hint="Contact No."
+                        android:textSize="20sp"
+                        android:inputType="number"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/edittext_background"
+                        android:padding="12dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/white"
+                        tools:ignore="Autofill,HardcodedText" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_background"
+                    android:layout_marginTop="15dp"
+                    android:padding="5dp"
+                    android:layout_marginHorizontal="15dp">
+
+                    <Spinner
+                        android:id="@+id/_addBookSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="@color/white"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/_addBookBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/blue"
+                    android:background="@drawable/button_background"
+                    android:padding="16dp"
+                    android:textSize="20sp"
+                    android:textAllCaps="false"
+                    android:layout_marginHorizontal="60dp"
+                    android:layout_marginVertical="30dp"
+                    android:text="Add"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

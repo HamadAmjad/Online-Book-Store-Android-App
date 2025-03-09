@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">BookWorm</string>
+    <string name="enter_your_registered_email">Enter your registered email</string>
+    <string name="forgot">Forgot</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="login">Login</string>
+    <string name="please_login_to_continue">Please login to continue</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="create_account">Create Account</string>
+    <string name="register">Register</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
+    <string name="seller">Seller</string>
+    <string name="buyer">Buyer</string>
+    <string name="create">Create</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="favorite">Favorite</string>
+    <string name="cart">Cart</string>
+    <string name="profile">Profile</string>
+    <string name="seller_dashboard">Seller Dashboard</string>
+    <string name="settings">Settings</string>
+    <string name="search_here">Search here!</string>
+    <string name="categories">Categories</string>
+    <string name="material">Material</string>
+    <string name="see_all">See all</string>
+    <string name="manage_orders">Manage Orders</string>
+    <string name="manage_books">Manage Books</string>
+</resources>
